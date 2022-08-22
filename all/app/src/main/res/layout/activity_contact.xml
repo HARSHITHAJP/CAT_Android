@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/conslayoutid"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".contact"
+    android:background="@drawable/mobilewallpaper">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="151dp"
+        android:layout_height="115dp"
+        android:layout_marginBottom="600dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/planet" />
+
+    <TextView
+        android:id="@+id/maintext"
+        android:layout_width="259dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:text="Gateways"
+        android:textAlignment="center"
+        android:textColor="#F5F9FA"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <Button
+        android:id="@+id/btnlinkedid"
+        android:layout_width="112dp"
+        android:layout_height="46dp"
+        android:backgroundTint="#CD7F32"
+        android:onClick="openWebFunc"
+        android:text="Linkedin"
+        android:textColor="#FFFFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.234"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.302" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="69dp"
+        android:layout_height="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.573"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.393"
+        app:srcCompat="@drawable/comments" />
+
+    <Button
+        android:id="@+id/btnemailid"
+        android:layout_width="118dp"
+        android:layout_height="42dp"
+        android:backgroundTint="#CD7F32"
+        android:onClick="openEmailFunc"
+        android:text="mail"
+        android:textColor="#FFFFFFFF"
+        app:icon="@android:drawable/ic_dialog_email"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.387" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="69dp"
+        android:layout_height="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.002"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.375"
+        app:srcCompat="@drawable/gmail" />
+
+    <Button
+        android:id="@+id/btncallid"
+        android:layout_width="113dp"
+        android:layout_height="43dp"
+        android:backgroundTint="#CD7F32"
+        android:onClick="openCallFunc"
+        android:text="call"
+        android:textColor="#FFFFFFFF"
+        app:icon="@android:drawable/ic_menu_call"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.889"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <Button
+        android:id="@+id/btnmsgid"
+        android:layout_width="117dp"
+        android:layout_height="53dp"
+        android:backgroundTint="#CD7F32"
+        android:onClick="openMsgFunc"
+        android:text="message"
+        android:textColor="#FFFFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.904"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.38" />
+
+    <TextView
+        android:id="@+id/maintext3"
+        android:layout_width="258dp"
+        android:layout_height="46dp"
+        android:layout_weight="1"
+        android:text="Contact Us"
+        android:textAlignment="center"
+        android:textColor="#2196F3"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.986"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.134" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="410dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="55dp"
+        android:background="#03A9F4"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center|top"
+        android:paddingTop="20dp"
+        android:text="Give your feedback here!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ratingBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="240dp"
+        android:layout_height="58dp"
+        app:layout_constraintBottom_toTopOf="@+id/switch1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't send email"
+        android:textColor="#FFFFFF"
+        android:textOff="we will Send email"
+        android:textOn="we won't send email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+    <!--    spinner--><!-- Text Label -->
+
+    <!-- Spinner Element -->
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="138dp"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:text="experience"
+        android:textColor="#FFEB3B"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/submitbuttonid"
+        app:layout_constraintEnd_toStartOf="@+id/spinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch1" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="174dp"
+        android:layout_height="28dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/submitbuttonid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/switch1"
+        app:layout_constraintVertical_bias="0.545" />
+
+    <Button
+        android:id="@+id/submitbuttonid"
+        android:layout_width="233dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="100dp"
+        android:text="Submit rating"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

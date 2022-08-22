@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homepage"
+    android:background="@drawable/wallpaper">
+
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="159dp"
+        android:layout_height="124dp"
+        app:srcCompat="@drawable/logo"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="191dp" />
+
+    <TextView
+        android:id="@+id/maintext"
+        android:layout_width="259dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:text="Equipo Manager"
+        android:textAlignment="center"
+        android:textColor="#0C0C0C"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.353" />
+
+    <TextView
+        android:id="@+id/loggedinID"
+        android:layout_width="383dp"
+        android:layout_height="135dp"
+        android:fontFamily="@font/almendra"
+        android:textAlignment="center"
+        android:textColor="#910B01"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.541" />
+
+    <Button
+        android:id="@+id/nextbutton"
+        android:layout_width="386dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#964B00"
+        android:onClick="OpenNextPageFunc"
+        android:text="NEXT"
+        android:textColor="#FFFFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.72" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

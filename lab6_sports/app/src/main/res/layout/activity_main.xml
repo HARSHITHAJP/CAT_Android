@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
+
+    <!--This will be the parent Floating Action Button-->
+    <!--After the implementation the Floating Action Button
+        at the bottom right corner-->
+    <!--After clicking the above button the following two buttons
+        will pop up. So this button is considered as parent FAB-->
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="416dp"
+        android:layout_height="568dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchtextID" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+
+        android:backgroundTint="#03A9F4"
+        android:src="@android:drawable/ic_input_add"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!--Floating action button for add alarm-->
+    <!--Make sure that you are constraining this
+        button to the parent button-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/equipment_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#03A9F4"
+        android:src="@android:drawable/ic_menu_sort_by_size"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toTopOf="@+id/add_fab"
+        app:layout_constraintEnd_toEndOf="@+id/add_fab"
+        app:layout_constraintStart_toStartOf="@+id/add_fab" />
+
+    <!--Action name text for the add alarm button-->
+    <!--Make sure that you are constraining this Text to
+        the add Alarm FAB button-->
+    <TextView
+        android:id="@+id/add_equipment_action_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Equipments"
+        app:layout_constraintBottom_toBottomOf="@+id/equipment_fab"
+        app:layout_constraintEnd_toStartOf="@+id/equipment_fab"
+        app:layout_constraintTop_toTopOf="@+id/equipment_fab" />
+
+    <!--Floating action button for add person-->
+    <!--Make sure that you are constraining this
+        button to the add Alarm FAB button-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_feedback_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#2196F3"
+        android:src="@android:drawable/btn_star_big_on"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toTopOf="@+id/equipment_fab"
+        app:layout_constraintEnd_toEndOf="@+id/equipment_fab"
+        app:layout_constraintStart_toStartOf="@+id/equipment_fab" />
+
+    <!--Action name text for the add person button-->
+    <!--Make sure that you are constraining this Text
+        to the add Person FAB button-->
+    <TextView
+        android:id="@+id/add_feedback_action_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Feedback"
+        app:layout_constraintBottom_toBottomOf="@+id/add_feedback_fab"
+        app:layout_constraintEnd_toStartOf="@+id/add_feedback_fab"
+        app:layout_constraintTop_toTopOf="@+id/add_feedback_fab" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="410dp"
+        android:layout_height="133dp"
+        android:layout_marginBottom="2dp"
+        android:background="#02FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/searchtextID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/header"
+            tools:srcCompat="@drawable/header" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="287dp"
+            android:layout_height="84dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="Sports Manager"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            android:typeface="serif" />
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/searchtextID"
+        android:layout_width="249dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:hint="Type here to search"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/webView"
+        app:layout_constraintEnd_toStartOf="@+id/searchBtnID"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+    <Button
+        android:id="@+id/searchBtnID"
+        android:layout_width="108dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="3dp"
+        android:text="Search"
+        app:layout_constraintBottom_toTopOf="@+id/webView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/searchtextID"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

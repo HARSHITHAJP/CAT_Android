@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Sports Manager</string>
+    <string name="toast_message">Welcome to sports manager</string>
+</resources>

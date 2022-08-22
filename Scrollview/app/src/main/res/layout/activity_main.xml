@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="278dp"
+        android:layout_height="104dp"
+        android:text="Button"
+        android:textColor="#FFC107"
+        tools:layout_editor_absoluteX="349dp"
+        tools:layout_editor_absoluteY="28dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="255dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="20dp"
+        android:text="gfsdfsswg"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="651dp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="289dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#FFC107"
+        android:text="News"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="21dp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="694dp"
+        android:layout_height="919dp"
+        android:fillViewport="true"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="289dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:id="@+id/scrollview1"
+                android:layout_width="437dp"
+                android:layout_height="529dp"
+                android:backgroundTint="#FDB9B9"
+                android:textAlignment="textEnd">
+
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_width="423dp"
+                    android:layout_height="393dp"
+                    android:backgroundTint="#F3C5C5"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                    android:textSize="30dp"
+                    tools:layout_editor_absoluteX="242dp"
+                    tools:layout_editor_absoluteY="805dp" />
+            </ScrollView>
+
+            <FrameLayout
+                android:layout_width="424dp"
+                android:layout_height="427dp">
+
+                <ImageView
+                    android:id="@+id/imageView16"
+                    android:layout_width="374dp"
+                    android:layout_height="427dp"
+                    app:srcCompat="@drawable/football" />
+            </FrameLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

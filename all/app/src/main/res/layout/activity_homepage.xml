@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/qnalayoutID"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homepage">
+
+    <LinearLayout
+        android:layout_width="326dp"
+        android:layout_height="706dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="25dp">
+
+
+        <TextView
+            android:id="@+id/logName"
+            android:layout_width="367dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text=""
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="367dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="enter details"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/nameid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/emailid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/phoneid"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:ems="10"
+            android:hint="phone"
+            android:inputType="phone" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="357dp"
+            android:layout_height="88dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginBottom="31dp">
+
+            <RadioButton
+                android:id="@+id/maleradioid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="male" />
+
+            <RadioButton
+                android:id="@+id/femaleradioid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="female" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/dateid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date" />
+
+        <CheckBox
+            android:id="@+id/checkid"
+            android:layout_width="381dp"
+            android:layout_height="42dp"
+            android:text="I agree that the above information is right!" />
+
+        <Button
+            android:id="@+id/submitbtnid"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:text="Submit" />
+
+        <ToggleButton
+            android:id="@+id/togglebtnid"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:textOff="DARK" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:clickable="true"
+            app:srcCompat="@android:drawable/btn_radio" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/contact_fab"
+            android:layout_width="103dp"
+            android:layout_height="42dp"
+            android:clickable="true"
+            app:srcCompat="@android:drawable/btn_star_big_on" />
+
+        <TextView
+            android:id="@+id/addcontactActionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONTACT" />
+
+    </LinearLayout>
+
+    ////------------------- Spinner -------------------- from GFG
+    <!-- Text Label -->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

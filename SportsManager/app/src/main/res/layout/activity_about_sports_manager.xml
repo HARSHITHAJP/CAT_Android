@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF8F8"
+    tools:context=".About_sports_manager">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="400dp"
+        android:layout_height="467dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="646dp"
+                android:text="\n Sports equipment management is the process of organizing, monitoring, and reporting on all sports equipment utilized by facilities. Training centers, gymnasiums, stadiums, sports federations, and even universities are examples of sports facilities. They are capable of hosting a variety of activities, tournaments, and training sessions.
+
+                                \nA sports equipment manager is in charge of their company's sports equipment purchase, maintenance, and disposal. They also guarantee that every equipment fulfills functional and safety standards before it is used by players. Meeting these rules is crucial if you want to avoid athlete injuries caused by inadequate equipment maintenance.
+                                \n \n  Equipment management involves:
+                                \n*	purchasing equipment from supplier
+                                \n*	inventory
+                                \n*	checking condition of equipment
+                                \n*	servicing from company
+                                \n*	security access control
+                                \n*	keeps track of equipment allocation to the students."
+                android:textColor="#393636"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/et_queries_id"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Enter your queries here!"
+                android:textColorHint="#000000" />
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="113dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:nestedScrollingEnabled="false"
+            android:padding="10dp"
+            app:srcCompat="@drawable/sports2" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:paddingRight="10dp"
+            android:text="How Equipo Manager Works"
+            android:textColor="#0E0E0E"
+            android:textColorHighlight="#000000"
+            android:textSize="20sp" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="393dp"
+        android:layout_height="65dp"
+        android:onClick="showSportsInfo"
+        android:text="Submit "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
